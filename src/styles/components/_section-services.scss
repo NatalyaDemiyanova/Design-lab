@@ -1,0 +1,49 @@
+.section-services {
+  background-image: url(../images/section_services_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 10px;
+  @include media($screen-tablet) {
+    padding: 60px 20px;
+  }
+  @include media {
+    padding: 120px 0 107px;
+  }
+
+  &__wrapper {
+    border: 2px solid $white;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+    @include media($screen-tablet) {
+      max-width: 905px;
+    }
+  }
+  &__title {
+    @include text($H400, 700, $white);
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    padding: 0 45px;
+    margin-bottom: 30px;
+    @include media($screen-tablet) {
+      @include text($H600, 700, $white);
+      padding: 0 110px;
+      margin-bottom: 50px;
+    }
+  }
+  &__text {
+    @include text($H300, 300, $white);
+    line-height: 25px;
+    margin: 0 auto;
+    padding: 0 40px;
+    @include media($screen-tablet) {
+      padding: 0;
+      width: 545px;
+      &:nth-child(1) {
+        width: 555px;
+      }
+    }
+  }
+}

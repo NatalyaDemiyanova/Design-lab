@@ -1,0 +1,59 @@
+.header {
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+
+  &__image-wrapper {
+    margin-bottom: 85px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    @include text($H500, 700, $white);
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 35px;
+    &--first-word {
+      display: block;
+    }
+    @include media($screen-tablet) {
+      width: 600px;
+      @include text($H700, 700, $white);
+    }
+  }
+
+  &__description {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    @include text($H200, 400, $white);
+    line-height: 29px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    @include media($screen-tablet) {
+      width: 580px;
+      padding: 0;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include media($screen-tablet) {
+      bottom: 100px;
+    }
+  }
+}

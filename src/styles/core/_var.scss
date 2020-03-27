@@ -1,0 +1,32 @@
+// Text colors
+$text-main-color: #3c3c3c;
+$border-color: #3c3c3c;
+$btn-bg-color: #3c3c3c;
+$white: #ffffff;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H700: calcRem(54px);
+$H600: calcRem(34px);
+$H500: calcRem(30px);
+$H400: calcRem(20px);
+$H300: calcRem(16px);
+$H200: calcRem(15px);
+$H100: calcRem(14px);
+
+$base-font: "Lato";
+
+$max-width: 1200px;
+
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-small-tablet: 480px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;

@@ -1,0 +1,19 @@
+.scroll {
+  width: 23px;
+  height: 37px;
+  border-radius: 12px;
+  border: 2px solid $white;
+  margin: 0 auto;
+  &::after {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $white;
+    position: absolute;
+  }
+}
