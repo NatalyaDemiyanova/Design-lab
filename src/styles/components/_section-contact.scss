@@ -6,38 +6,16 @@
   @include media {
     padding: 50px 0;
   }
-  &__wrapper {
-    border: 2px solid $border-color;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 70px;
-    @include media {
-      max-width: 905px;
-    }
-  }
-  &__title {
-    @include text($H400, 700);
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    padding: 0 50px;
-    margin-bottom: 30px;
-    @include media($screen-tablet) {
-      @include text($H600, 700);
-      padding: 0 100px;
-      margin-bottom: 50px;
-    }
-  }
+
   &__text {
-    padding: 0px 40px;
-    margin: 0 auto;
-    @include text($H300, 300);
-    line-height: 25px;
+    @extend %section-text;
     margin-bottom: 60px;
     @include media($screen-tablet) {
       width: 545px;
-      padding: 0;
     }
+  }
+  &__button-wrapper {
+    margin-bottom: 70px;
   }
   &__button {
     padding: 16px 60px;

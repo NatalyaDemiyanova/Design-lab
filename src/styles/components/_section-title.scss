@@ -1,0 +1,22 @@
+.section-title {
+  width: 200px;
+  @include text($H400, 700);
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 30px;
+  @include media($screen-tablet) {
+    width: 420px;
+    @include text($H600, 700);
+    margin-bottom: 50px;
+  }
+  &--color {
+    color: $white;
+  }
+  &--placing {
+    margin-bottom: 50px;
+    @include media($screen-tablet) {
+      margin-bottom: 110px;
+    }
+  }
+}
