@@ -2,8 +2,8 @@
 
 // Core
 @import "./core/var"; //переменные (записываем первым)
-@import "./core/inheritance"; //шаблоны
 @import "./core/mixins"; // миксины
+@import "./core/inheritance"; //шаблоны
 @import "./core/common"; //общие стили (всегда запис. последним)
 
 // блоки
