@@ -6,29 +6,8 @@
   @include media {
     padding: 105px 0 110px;
   }
-
-  &__wrapper {
-    border: 2px solid $border-color;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 90px;
-    @include media {
-      max-width: 905px;
-    }
-  }
-  &__title {
-    text-align: center;
-    @include text($H400, 700);
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    padding: 0 45px;
-    margin-bottom: 50px;
-    @include media($screen-tablet) {
-      @include text($H600, 700);
-      padding: 0 110px;
-      margin-bottom: 100px;
-    }
+  &__list {
+    margin-bottom: 90px;
   }
   &__list-item {
     &:not(:last-of-type) {
@@ -55,12 +34,9 @@
   }
 
   &__text {
-    @include text($H100, 300);
-    line-height: 25px;
-    margin: 0 auto;
-    padding: 0 40px;
+    @extend %section-text;
+    font-size: $H100;
     @include media($screen-tablet) {
-      padding: 0;
       width: 550px;
       &:nth-child(1) {
         width: 500px;
