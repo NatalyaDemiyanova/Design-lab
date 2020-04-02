@@ -23,3 +23,15 @@ a {
 .container {
   @extend %container;
 }
+
+.wrapper {
+  border: 2px solid $border-color;
+  margin: 0 auto;
+  text-align: center;
+  @include media {
+    max-width: 905px;
+  }
+  &--color {
+    border-color: $white;
+  }
+}
