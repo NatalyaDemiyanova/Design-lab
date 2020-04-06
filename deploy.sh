@@ -1,4 +1,4 @@
-# !/usr/bin/env sh
+#!/usr/bin/env sh
 
 # остановить публикацию при ошибках
 set -e
@@ -6,7 +6,7 @@ set -e
 # сборка
 npm run build
 
-# переход в каталог сборки
+# переход в каталог сборкиdeploy
 cd build
 
 # если вы публикуете на пользовательский домен
@@ -20,7 +20,8 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # если вы публикуете по адресу https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/NatalyaDemiyanova/Design-lab. git master:gh-pages
+# напрмер git push -f https://github.com/a1exalexander/cahee.git master:gh-pages
 
+git push -f https://github.com/NatalyaDemiyanova/Design-lab.git master:gh-pages
 
 cd -
